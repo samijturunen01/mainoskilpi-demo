@@ -12,7 +12,7 @@ import { usePageMeta } from '../lib/meta'
 export function Portfolio() {
   usePageMeta(
     'Toteutuksia – teippaukset, kilvet ja tulosteet',
-    'Aitoja Mainoskilven toteutuskuvia yrityksen omasta galleriasta. Selaa autoteippauksia, ikkunoita, kylttejä ja muita töitä. Yksityinen demo.',
+    'Aitoja Mainoskilven toteutuskuvia yrityksen omasta galleriasta. Selaa autoteippauksia, ikkunoita, kylttejä ja muita töitä. Verkkosivudemo.',
   )
   return (
     <>
@@ -108,9 +108,7 @@ export function About() {
           name="workshop.webp"
           alt="Mainoskilven omassa galleriassa esitelty henkilöauto teippaushallissa"
         />
-        <figcaption>
-          Aito kuva Mainoskilven toteutusgalleriasta. Kuvan julkaisulupa tarkistettava.
-        </figcaption>
+        <figcaption>Aito kuva Mainoskilven toteutusgalleriasta.</figcaption>
       </figure>
       <Process />
       <section className="wrap local-section">
@@ -216,27 +214,26 @@ export function Contact() {
 export function DemoInfo() {
   usePageMeta(
     'Tietoa demosta ja kuvaoikeuksista',
-    'Yksityisen Mainoskilpi-verkkosivukonseptin tiedot, lähteet, kuvaoikeudet ja demolomakkeen tietojen käsittely.',
+    'Mainoskilpi-verkkosivukonseptin tiedot, lähteet, kuvaoikeudet ja demolomakkeen tietojen käsittely.',
   )
   return (
     <section className="wrap legal-page section">
-      <Eyebrow>Yksityinen esittelyversio</Eyebrow>
+      <Eyebrow>Verkkosivukonsepti</Eyebrow>
       <h1>Tietoa demosta.</h1>
       <p className="lead">
-        Tämä sivusto on Mainoskilpi Muhonen Oy:lle valmisteltu yksityinen verkkosivukonsepti. Yritys
-        ei ole hyväksynyt tai tilannut sitä.
+        Tämä sivusto on Mainoskilpi Muhonen Oy:lle valmisteltu verkkosivukonsepti. Se on julkaistu
+        esittelyä varten GitHub Pagesissa. Yritys ei ole hyväksynyt tai tilannut sivustoa.
       </p>
-      <h2>Aidot kuvat, tarkistettavat oikeudet</h2>
+      <h2>Aidot kuvat ja alkuperäiset lähteet</h2>
       <p>
         Kaikki toteutusvalokuvat ovat yrityksen omasta julkisesta galleriasta. Sivustolla käytetään
         käyttäjän toimittamaa alkuperäistä logoa. Kuvia ei ole luotu tekoälyllä, eikä mukana ole
         kuvitteellisia asiakastöitä tai muiden mainosyritysten valokuvia.
       </p>
       <p>
-        Kuvat on ladattu paikallista esittelyä varten ja optimoitu kuvasuhteet säilyttäen. Julkinen
-        saatavuus ei tarkoita vapaata käyttöoikeutta. Ennen julkaisua tarvitaan tarvittavat luvat
-        yritykseltä, kuvaajilta ja muilta oikeudenhaltijoilta. Asiakkuuksien nykytilasta tai töiden
-        tarkasta laajuudesta ei tehdä oletuksia.
+        Kuvat on optimoitu kuvasuhteet säilyttäen. Sivuston julkaisija on vahvistanut oikeutensa
+        kuvien käyttöön. Kuvien oikeudet säilyvät niiden oikeudenhaltijoilla. Asiakkuuksien
+        nykytilasta tai töiden tarkasta laajuudesta ei tehdä oletuksia.
       </p>
       <a
         href="http://www.mainoskilpi.fi/galleria/"
@@ -251,7 +248,7 @@ export function DemoInfo() {
         Yhteystiedot, palvelut ja yrityksen oma historiakuvaus tarkistettiin 10.11.2026. Yrityksen
         oma sivusto kertoo toiminnan alkaneen vuonna 1971. Asiakastiedon yrityshakemistossa
         toiminnan aloitusvuosi on 1982 ja Proffin rekisteröintipäivä on 20.1.1983. Historiassa
-        käytetään yrityksen omaa kuvausta; vuosilukujen ero on hyvä vahvistaa ennen julkaisua.
+        käytetään yrityksen omaa kuvausta.
       </p>
       <ul>
         <li>
@@ -290,12 +287,12 @@ export function DemoInfo() {
         Puhelin-, sähköposti- ja karttalinkit avaavat käyttäjän valitessa ulkoisen sovelluksen tai
         palvelun. Niiden toimintaa koskevat kyseisen palvelun ehdot.
       </p>
-      <h2>Ennen julkista käyttöönottoa</h2>
+      <h2>Esittelyversio ja jatkokehitys</h2>
       <p>
-        Yrityksen hyväksyntä, tekstien ja kuvaoikeuksien tarkistus, lopullinen logotiedosto,
-        tietosuojatiedot, saavutettavuuden tarkistus ja turvallinen lomakepalvelu tarvitaan ennen
-        julkaisua. Hakukoneindeksointi on estetty robots-metatiedolla ja robots.txt-tiedostolla.
-        Sivustoa ei ole julkaistu.
+        Julkinen esittelyversio käyttää demolomaketta. Ennen yrityksen virallista käyttöönottoa
+        tarvitaan yrityksen hyväksyntä, lopulliset sisällöt, tietosuojatiedot ja turvallinen
+        lomakepalvelu. Hakukoneille on asetettu noindex-ohje, jotta esittelyversio ei sekoitu
+        yrityksen viralliseen verkkosivustoon.
       </p>
       <Button to="/" secondary>
         Takaisin etusivulle

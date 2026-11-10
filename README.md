@@ -1,6 +1,10 @@
-# Mainoskilpi Muhonen Oy – paikallinen verkkosivudemo
+# Mainoskilpi Muhonen Oy – verkkosivudemo
 
-Valmis suomenkielinen React-, Vite- ja TypeScript-toteutus yksityiseen esittelyyn. Yritys ei ole hyväksynyt tai tilannut sivustoa. Lähdekoodi tallennetaan käyttäjän pyynnöstä yksityiseen GitHub-repositorioon. Verkkosivustoa ei ole julkaistu julkiseen käyttöön.
+Suomenkielinen React-, Vite- ja TypeScript-verkkosivukonsepti. Käyttäjä pyysi 10.11.2026 julkista GitHub-julkaisua ja vahvisti oikeutensa kuvien käyttöön. Sivusto on esittelydemo; yritys ei ole hyväksynyt tai tilannut sitä. Tarjouslomake ei lähetä tietoja.
+
+**Sivusto:** https://samijturunen01.github.io/mainoskilpi-demo/
+
+**Lähdekoodi:** https://github.com/samijturunen01/mainoskilpi-demo
 
 ## Käynnistys
 
@@ -68,28 +72,33 @@ Testit varmistavat lomakkeen validoinnin, palvelun esivalinnan, liitetiedoston k
 
 Logo on käyttäjän toimittama 150 × 150 px:n JPEG. Se säilytettiin alkuperäisenä; animaation sisällä käytetään samaa kuvaa SVG-maskin läpi. Se ei ole uusi, tekoälyllä tuotettu tai jäljennetty logo. Julkaisua varten tarvitaan mieluiten alkuperäinen SVG-, EPS- tai suuri läpinäkyvä PNG-tiedosto.
 
-Valokuvat ovat [yrityksen omasta galleriasta](http://www.mainoskilpi.fi/galleria/). Julkinen saatavuus ei anna automaattista julkaisulupaa. Kuvien, asiakkaiden tunnusten ja logon käyttöoikeus on tarkistettava ennen julkista käyttöä. Tämä on merkitty myös demon omaan tietosivuun ja kuvien yksityiskohtanäkymiin.
+Valokuvat ovat [yrityksen omasta galleriasta](http://www.mainoskilpi.fi/galleria/). Käyttäjä vahvisti 10.11.2026 oikeutensa kuvien käyttöön ja antoi luvan julkiseen julkaisuun. Lähdeosoitteet ja vahvistus on kirjattu tiedostoon `docs/image-sources.json`. Oikeudet säilyvät alkuperäisillä oikeudenhaltijoilla.
 
 Historiassa käytetään [yrityksen omaa ilmoitusta vuodesta 1971](http://www.mainoskilpi.fi/). Yrityshakemiston 1982 ja rekisteröinnin 1983 poikkeavat tästä: tarkista vuosiluvun lopullinen esitystapa yritykseltä. Hintaa, toimitusaikoja, arvosteluja tai asiakkaiden lausuntoja ei ole keksitty. Työn vaiheita kuvaava osio on ohje yhteydenottoon valmistautumisesta, ei vahvistamaton lupaus yrityksen prosessista.
 
-## Myöhempi staattinen hosting
+## GitHub Pages -julkaisu
 
-`VITE_BASE_PATH` voi myöhemmin olla esimerkiksi `/valittu-repon-nimi/`. Arvoa ei ole ennalta sidottu GitHub-repoon tai domainiin:
+`.github/workflows/pages.yml` asentaa riippuvuudet, ajaa lintin ja testit, rakentaa sivuston ja julkaisee `dist/`-kansion jokaisen `main`-haaran päivityksen jälkeen. Julkaisun voi käynnistää myös GitHubin Actions-välilehdeltä. Työnkulku käyttää Node.js 24:ää ja asettaa `VITE_BASE_PATH`-arvon repositorion nimen perusteella.
+
+Paikallinen GitHub Pages -polun testaus:
 
 ```powershell
-$env:VITE_BASE_PATH = '/valittu-repon-nimi/'
+$env:VITE_BASE_PATH = '/mainoskilpi-demo/'
 npm run build
+npm run preview
+# Esikatselu: http://127.0.0.1:4173/mainoskilpi-demo/
+# Pysäytä esikatselu Ctrl+C:llä ja palauta paikallinen oletus:
 Remove-Item Env:VITE_BASE_PATH
 ```
 
-Vite asettaa resurssien polut ja React Router käyttää samaa juuripolkua. Rakennus luo jokaiselle tunnetulle reitille hakemiston `index.html`-tiedoston sekä `404.html`-varasivun. Nämä ovat sivukohtaisilla metatiedoilla varustettuja SPA-aloitustiedostoja, eivät HTML-sisällön täydellistä esirenderöintiä. Lopullinen esirenderöinti, kanoniset osoitteet ja sitemap ratkaistaan vasta hyväksytyn julkaisualustan kanssa. Hakukone-estot poistetaan vasta hyväksytyssä tuotantoversiossa.
+Vite asettaa resurssien polut ja React Router käyttää samaa juuripolkua. Rakennus luo jokaiselle tunnetulle reitille hakemiston `index.html`-tiedoston sekä `404.html`-varasivun. Nämä ovat sivukohtaisilla metatiedoilla varustettuja SPA-aloitustiedostoja, eivät HTML-sisällön täydellistä esirenderöintiä. Esittelyversion `noindex` säilyy käytössä. Mahdollinen esirenderöinti, kanoniset osoitteet ja sitemap kuuluvat yrityksen virallisen tuotantoversion valmisteluun.
 
-## Ennen tuotantoa
+## Ennen yrityksen virallista käyttöönottoa
 
 1. Yrityksen hyväksyntä sisällölle, palveluille, yhteystiedoille ja historiatiedolle.
-2. Logon ja jokaisen kuvan julkaisuluvat sekä laadukas alkuperäinen logotiedosto.
+2. Laadukas alkuperäinen logotiedosto ja lopullinen kuva-aineisto. Käyttäjä on vahvistanut nykyisten kuvien käyttöoikeuden.
 3. Todellisen lomakepalvelun suunnittelu ja tietosuojaseloste. Mahdollinen reCAPTCHA on varmennettava vastaanottavalla palvelimella.
 4. Valitun hostin HTTPS, uudelleenohjaukset, suojausotsakkeet, saavutettavuus- ja tuotantotestit.
-5. Vasta erillisellä luvalla julkinen verkkosivujulkaisu, domain ja mahdolliset integraatiot. Yksityinen GitHub-repositorio on lähdekoodin säilytys- ja jatkokehityspaikka.
+5. Yrityksen domain ja mahdolliset integraatiot vasta erillisellä luvalla. Julkinen GitHub Pages -osoite on tämän esittelydemon julkaisupaikka.
 
 Nykyistä verkkosivustoa, DNS:ää, palvelinta tai varmenteita ei ole muutettu.

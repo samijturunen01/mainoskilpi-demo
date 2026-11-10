@@ -2,7 +2,7 @@ import { readFile, mkdir, writeFile } from 'node:fs/promises'
 import sharp from 'sharp'
 
 // Run inspect-gallery.mjs first. Only official company assets are downloaded.
-// These assets are for this private demo. Publication permission is not established.
+// The user confirmed image usage rights and authorized public publication on 2026-11-10.
 const inventory = JSON.parse(await readFile('qa/gallery/inventory.json', 'utf8'))
 const selection = [
   [2, 'hero-fleet', 'Autoteipatut henkilöautot yrityksen galleriassa'],
@@ -51,7 +51,7 @@ for (const [index, name, description] of selection) {
     description,
     accessed: '2026-11-10',
     permission:
-      'Private speculative demo only. Permission from rights holders required before publication.',
+      'User confirmed image usage rights and authorized public publication on 2026-11-10.',
     originalWidth: meta.width,
     originalHeight: meta.height,
     width: result.width,

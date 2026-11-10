@@ -23,7 +23,7 @@ HTTP-osoitteet avautuivat suoraan paikallisella HTTP-asiakkaalla. Tutkimuksen we
 - Käyttäjän logo löytyy tiedostosta `mainoskilpi logo.jpg`. Kopio käytössä tiedostossa `public/brand/mainoskilpi-logo.jpg`.
 - Aidoksi vahvistettua ennen–jälkeen-kuvaparia ei löytynyt. Vertailua ei rakennettu eri kohteista, ja sen tilalla on aidon kohokirjainkuvan suurennin.
 - Asiakasarvosteluja ei varmennettu, joten lausunto-osio jätettiin pois.
-- Kuvaoikeudet: vain yksityiseen paikalliseen esittelyyn. Yrityksen tai kuvaajien julkaisulupia ei ole saatu. Jokaisen käytetyn kuvan lähde on `image-sources.json`-tiedostossa. Myös asiakaslogoja sisältävien kuvien käyttö tulee tarkistaa.
+- Kuvaoikeudet, päivitys 10.11.2026: käyttäjä vahvisti oikeutensa kuvien käyttöön ja pyysi sivuston sekä repositorion julkaisemista julkisina GitHubissa. Aiempi yksityiseen esittelyyn rajoittunut ohje on siten korvattu. Jokaisen käytetyn kuvan lähde ja käyttöoikeuden vahvistus on `image-sources.json`-tiedostossa.
 - Sivustossa ei käytetä tekoälykuvia, kuvitteellisia toteutuksia, kilpailijoiden kuvia tai kuvapankkikuvia. Aiemmat luonnostelussa luodut kuvat eivät sisälly projektin tiedostoihin tai sivustoon.
 - Uusi sivuteksti on demoa varten kirjoitettua suomenkielistä tekstiä, ei yrityksen hyväksymää markkinointia. Työvaiheosio kuvaa tilaamiseen valmistautumista. Mitään tarkkaa hintaa, toimitusaikaa, lupausta, sertifiointia tai yrityksen saavutusta ei lisätty.
 

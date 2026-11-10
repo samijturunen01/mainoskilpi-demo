@@ -27,6 +27,10 @@ Paikallinen sivusto tarkistettiin Codexin selaimessa. Tunnetut 11 sivua ja tunte
 
 ## Rajaukset
 
-Tämä ei ole täydellinen saavutettavuusauditointi, eikä Lighthouse-pisteitä ole mitattu. Safari-, Firefox- ja oikean puhelinlaitteen testit ovat tuotantoon siirryttäessä suositeltavia. Julkisen palvelimen HTTPS:ää, lomakepalvelinta, sähköpostitoimitusta tai GitHub Pages -julkaisua ei testattu, koska niitä ei ole otettu käyttöön.
+Tämä ei ole täydellinen saavutettavuusauditointi, eikä Lighthouse-pisteitä ole mitattu. Safari-, Firefox- ja oikean puhelinlaitteen testit ovat tuotantoon siirryttäessä suositeltavia. Lomakepalvelinta ja sähköpostitoimitusta ei ole otettu käyttöön eikä testattu.
 
-Alkuperäisissä yrityskuvissa on eri resoluutioita; niiden sisältöä ei muutettu tai täydennetty tekoälyllä. Julkaisuluvat ovat edelleen tarkistettavia. Lähteet löytyvät `image-sources.json`-tiedostosta.
+Alkuperäisissä yrityskuvissa on eri resoluutioita; niiden sisältöä ei muutettu tai täydennetty tekoälyllä. Käyttäjä vahvisti 10.11.2026 oikeutensa kuvien käyttöön. Lähteet löytyvät `image-sources.json`-tiedostosta.
+
+## GitHub Pages
+
+Julkinen julkaisu käyttää `/mainoskilpi-demo/`-juuripolkua. GitHub Actions ajaa lintin, neljä vuorovaikutustestiä ja TypeScript-tarkistuksen sisältävän tuotantorakennuksen ennen jokaista julkaisua. Julkaisuhistoria ja tarkistusten tulokset näkyvät repositorion Actions-välilehdellä. Sivusto säilyy demona, ja hakukoneiden `noindex`-ohje sekä tietoja lähettämätön lomake säilyvät käytössä.

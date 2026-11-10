@@ -6,7 +6,7 @@ const html = await readFile('dist/index.html', 'utf8')
 const routes = {
   palvelut: [
     'Teippaukset, kilvet ja tulosteet Joensuussa',
-    'Mainoskilven teippaukset, mainoskilvet ja tulosteet. Yksityinen verkkosivukonsepti.',
+    'Mainoskilven teippaukset, mainoskilvet ja tulosteet. Verkkosivukonsepti.',
   ],
   'palvelut/autoteippaukset': [
     'Autoteippaukset Joensuu',
@@ -14,7 +14,7 @@ const routes = {
   ],
   'palvelut/ikkunateippaukset': [
     'Ikkunateippaukset Joensuu',
-    'Mainoskilven ikkunateippaukset ja kalvotukset Joensuussa. Yksityinen verkkosivudemo.',
+    'Mainoskilven ikkunateippaukset ja kalvotukset Joensuussa. Verkkosivudemo.',
   ],
   'palvelut/mainoskilvet': [
     'Mainoskilvet ja opasteet Joensuu',
@@ -22,15 +22,15 @@ const routes = {
   ],
   'palvelut/suurkuvatulosteet': [
     'Suurkuvatulosteet Joensuu',
-    'Mainoskilven suurkuvatulosteet, banderollit ja tulostustapetit. Yksityinen verkkosivudemo.',
+    'Mainoskilven suurkuvatulosteet, banderollit ja tulostustapetit. Verkkosivudemo.',
   ],
   'palvelut/tarrat': [
     'Tarrat ja tarratekstit Joensuu',
-    'Tarrat ja yksi- ja moniväriset tarratekstit Mainoskilveltä Joensuusta. Yksityinen verkkosivudemo.',
+    'Tarrat ja yksi- ja moniväriset tarratekstit Mainoskilveltä Joensuusta. Verkkosivudemo.',
   ],
   referenssit: [
     'Toteutuksia – teippaukset, kilvet ja tulosteet',
-    'Aitoja toteutuskuvia Mainoskilven omasta galleriasta. Julkaisuluvat tarkistettava ennen julkaisua.',
+    'Aitoja toteutuskuvia Mainoskilven omasta galleriasta. Tutustu teippauksiin, kilpiin ja tulosteisiin.',
   ],
   yritys: [
     'Joensuulainen perheyritys',
@@ -42,7 +42,7 @@ const routes = {
   ],
   'tietoa-demosta': [
     'Tietoa demosta ja kuvaoikeuksista',
-    'Yksityisen verkkosivukonseptin lähteet, kuvaoikeudet ja tietojen käsittely.',
+    'Verkkosivukonseptin lähteet, kuvaoikeudet ja tietojen käsittely.',
   ],
 }
 for (const [route, [title, description]] of Object.entries(routes)) {

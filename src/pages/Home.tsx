@@ -107,7 +107,7 @@ export function Process() {
 export function Home() {
   usePageMeta(
     'Näy. Erotu. Jää mieleen.',
-    'Autoteippaukset, ikkunateippaukset, mainoskilvet ja suurkuvatulosteet Joensuusta. Tutustu Mainoskilven palveluihin ja aitoihin toteutuskuviin. Yksityinen demo.',
+    'Autoteippaukset, ikkunateippaukset, mainoskilvet ja suurkuvatulosteet Joensuusta. Tutustu Mainoskilven palveluihin ja aitoihin toteutuskuviin. Verkkosivudemo.',
   )
   return (
     <>

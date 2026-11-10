@@ -103,10 +103,7 @@ export function ProjectGallery({ preview = false }: { preview?: boolean }) {
           </button>
         </div>
       )}
-      <p className="image-credit">
-        Aidot kuvat Mainoskilven omasta galleriasta. Kuvien julkaisuluvat tarkistettava ennen
-        julkaisua.
-      </p>
+      <p className="image-credit">Aidot kuvat Mainoskilven omasta toteutusgalleriasta.</p>
       <dialog
         ref={dialog}
         className="project-dialog"
@@ -148,9 +145,6 @@ export function ProjectGallery({ preview = false }: { preview?: boolean }) {
                 >
                   Alkuperäinen kuva Mainoskilven sivustolla ↗
                 </a>
-                <p className="image-credit">
-                  Yksityisen demon kuva. Julkaisulupa varmistettava oikeudenhaltijalta.
-                </p>
               </div>
               <Link
                 className="button"
